@@ -1,0 +1,35 @@
+.wrapper {
+  background-color: white;
+}
+
+.container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.brand {
+  float: left;
+  width: 258px;
+}
+
+.nav {
+  float: left;
+  margin-top: 20px;
+}
+
+.nav li {
+  color: #666;
+}
+
+.nav li.active a, .nav li a:hover {
+  color: #0099cc;
+  font-weight: normal;
+}
+
+.tel {
+  float: right;
+  line-height: 28px;
+  border-radius: 12px;
+  margin-top: 20px;
+  padding: 0 10px;
+}

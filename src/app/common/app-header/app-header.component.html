@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <div class="container cleafix">
+    <div class="brand">
+      <img class="img-fluid" src="assets/img/logo.png">
+    </div>
+    <div class="float-right">
+      <ul class="nav nav-inline">
+        <li *ngFor="let item of items; let i = index"
+            [class.active]="activeIndex === i">
+          <a href="{{item.url}}"
+             class="text-big"
+             [ngClass]="getItemStyle(i)">{{item.title}}</a>
+        </li>
+      </ul>
+      <div class="tel text-main border border-main">{{tel}}</div>
+    </div>
+  </div>
+</div>
