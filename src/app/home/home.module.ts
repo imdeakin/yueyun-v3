@@ -25,10 +25,26 @@ import { CaseItemComponent } from '../common/case-item';
 import { BoardSchemeComponent } from '../common/board-scheme';
 import { SchemeItemComponent } from '../common/scheme-item';
 
+// 关于我们
+import { BoardAboutComponent } from '../common/board-About';
+import { AboutItemComponent } from '../common/about-item';
+
+// 联系我们
+import { BoardContactComponent } from '../common/board-contact';
+
+// 开发流程
+import { BoardProcessComponent } from '../common/board-process';
+
+// 悬浮按钮
+import { FloatBtnsComponent } from '../common/float-btns';
+
 // 服务
 import { ServiceServer } from '../common/service-item/service-server';
 import { CaseServer } from '../common/case-item/case-server';
 import { SchemeServer } from '../common/scheme-item/scheme-server';
+import { AboutServer } from '../common/about-item/about-server';
+import { ContactServer } from '../common/board-contact/contact-server';
+import { BigBannerServer } from '../common/big-banner/big-banner-server';
 
 @NgModule({
   imports: [
@@ -47,12 +63,20 @@ import { SchemeServer } from '../common/scheme-item/scheme-server';
     CaseNavComponent,
     CaseItemComponent,
     BoardSchemeComponent,
-    SchemeItemComponent
+    SchemeItemComponent,
+    BoardAboutComponent,
+    AboutItemComponent,
+    BoardContactComponent,
+    BoardProcessComponent,
+    FloatBtnsComponent
   ],
   providers: [
     ServiceServer,
     CaseServer,
-    SchemeServer
+    SchemeServer,
+    AboutServer,
+    ContactServer,
+    BigBannerServer
   ],
   exports: [HomeComponent]
 })

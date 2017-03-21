@@ -1,7 +1,7 @@
 <div class="con">
   <board-header [color]="hColor" [title]="hTitle"></board-header>
   <div class="container">
-    <div class="list">
+    <div class="list clearfix">
       <div class="item x3 padding-small" *ngFor="let item of schemeList">
         <scheme-item [data]="item"></scheme-item>
       </div>

@@ -3,38 +3,26 @@
  */
 import { Injectable } from '@angular/core';
 
-import { CaseItemData } from './case-item-data';
+import { ApiServer } from '../../serv/api-server';
+import { ApiConfig } from '../../serv/api-config';
+
+declare let $: any;
 
 @Injectable()
 export class CaseServer {
-  public caseData: CaseItemData[] = [
-    {
-      img: 'assets/img/case_01.jpg',
-      name: '讯高水壶有限公司',
-      type: '商城类网站',
-      describe: '询价、商品展示'
-    },
-    {
-      img: 'assets/img/case_01.jpg',
-      name: '讯高水壶有限公司',
-      type: '商城类网站',
-      describe: '询价、商品展示'
-    },
-    {
-      img: 'assets/img/case_01.jpg',
-      name: '讯高水壶有限公司',
-      type: '商城类网站',
-      describe: '询价、商品展示'
-    },
-    {
-      img: 'assets/img/case_01.jpg',
-      name: '讯高水壶有限公司',
-      type: '商城类网站',
-      describe: '询价、商品展示'
-    }
-  ];
+  constructor(private apiServer: ApiServer) {
+  }
 
-  public getCaseData(): CaseItemData[] {
-    return this.caseData;
+  public getCaseList(data, success, failure?): void {
+    this.apiServer.post({
+      url: ApiConfig.apiPath.getCaseList,
+      data: $.param(data),
+      success: (data) => {
+        success(data);
+      },
+      failure: () => {
+        console.error('Get case list error!');
+      }
+    });
   }
 }

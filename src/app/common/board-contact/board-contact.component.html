@@ -1,0 +1,92 @@
+<div class="con">
+  <board-header [color]="hColor" [title]="hTitle"></board-header>
+  <div class="container clearfix">
+    <form (ngSubmit)="onSubmit()" class="x6" #contactForm="ngForm">
+      <div class="form-group" [class.error]="name.errors && (name.dirty || name.touched)">
+        <input type="text" name="name" value="" placeholder="姓名" minlength="2" maxlength="16" required
+               [(ngModel)]="user.name" #name="ngModel">
+        <div class="error-msg" *ngIf="name.errors && (name.dirty || name.touched)">
+          <div [hidden]="!name.errors.required">
+            此项必须填写！
+          </div>
+          <div [hidden]="!name.errors.minlength">
+            内容长度必须是2-16！
+          </div>
+          <div [hidden]="!name.errors.maxlength">
+            内容长度必须是2-16！
+          </div>
+        </div>
+      </div>
+      <div class="form-group" [class.error]="phone.errors && (phone.dirty || phone.touched)">
+        <input type="tel" name="phone" value="" placeholder="电话" datatype="contact" required
+               [(ngModel)]="user.phone" #phone="ngModel">
+        <div class="error-msg" *ngIf="phone.errors && (phone.dirty || phone.touched)">
+          <div [hidden]="!phone.errors.required">
+            此项必须填写！
+          </div>
+          <div [hidden]="!phone.errors.type">
+            请输入正确的联系号码！
+          </div>
+        </div>
+      </div>
+      <div class="form-group" [class.error]="email.errors && (email.dirty || email.touched)">
+        <input type="email" name="email" value="" placeholder="邮箱" required
+               [(ngModel)]="user.email" #email="ngModel">
+        <div class="error-msg" *ngIf="email.errors && (email.dirty || email.touched)">
+          <div [hidden]="!email.errors.required">
+            此项必须填写！
+          </div>
+          <div [hidden]="!email.errors.type">
+            请输入正确的邮箱！
+          </div>
+        </div>
+      </div>
+      <div class="form-group" [class.error]="word.errors && (word.dirty || word.touched)">
+        <textarea name="word" placeholder="请写下您的意见或留言" maxlength="500" required
+                  [(ngModel)]="user.word" #word="ngModel"></textarea>
+        <div class="error-msg" *ngIf="word.errors && (word.dirty || word.touched)">
+          <div [hidden]="!word.errors.required">
+            此项必须填写！
+          </div>
+          <div [hidden]="!word.errors.maxlength">
+            内容长度必须是500字以内
+          </div>
+        </div>
+      </div>
+      <div class="form-group text-center">
+        <button type="submit" [disabled]="!contactForm.form.valid">联系我们</button>
+      </div>
+    </form>
+    <div class="info x6">
+      <div class="info-group">
+        <i class="icon-font">&#xe602;</i>
+        <span class="label">公司地址：</span>
+        <span class="text">{{data.addr}}</span>
+      </div>
+      <div class="info-group">
+        <i class="icon-font">&#xe604;</i>
+        <span class="label">免费咨询电话：</span>
+        <span class="text">{{data.tel}}</span>
+      </div>
+      <div class="info-group">
+        <i class="icon-font">&#xe606;</i>
+        <span class="label">商务合作：</span>
+        <span class="text">{{data.email}}</span>
+      </div>
+      <div class="info-group">
+        <i class="icon-font">&#xe60a;</i>
+        <span class="label">工作时间：</span>
+        <span class="text">{{data.work}}</span>
+      </div>
+      <div class="info-group">
+        <i class="icon-font">&#xe60b;</i>
+        <span class="label">地铁：</span>
+        <span class="text">{{data.guide}}</span>
+      </div>
+      <div class="info-group">
+        <img src="{{data.vcode}}">
+        <div class="text text-default">扫一扫，关注微信</div>
+      </div>
+    </div>
+  </div>
+</div>

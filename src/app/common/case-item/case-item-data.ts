@@ -2,9 +2,10 @@
  * Created by Deakin on 2017/3/20 0020.
  */
 export class CaseItemData {
-  constructor(public img: string,
-              public name: string,
+  constructor(public categoryNo: string,
+              public image: string,
+              public categoryName: string,
               public type: string,
-              public describe: string) {
+              public func: string) {
   }
 }

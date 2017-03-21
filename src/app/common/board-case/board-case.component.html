@@ -1,11 +1,13 @@
 <div class="con">
   <div class="container">
     <board-header [color]="hColor" [title]="hTitle"></board-header>
-    <div class="list-btns">
-      <case-nav></case-nav>
-    </div>
+    <ul class="nav nav-inline clearfix">
+      <li *ngFor="let item of navItems"
+          (click)="switchList(item.id)"
+          [class.active]="curCaseType === item.id"><a href="javascript:;">{{item.title}}</a></li>
+    </ul>
     <div class="list clearfix">
-      <div class="item x3 padding-left-right-small" *ngFor="let item of caseList">
+      <div class="item x3 padding-left-right-small" *ngFor="let item of curCaseList">
         <case-item [data]="item"></case-item>
       </div>
     </div>

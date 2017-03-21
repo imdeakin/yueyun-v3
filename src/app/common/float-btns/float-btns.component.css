@@ -1,0 +1,50 @@
+.con {
+  position: fixed;
+  top: 300px;
+  right: 0;
+  z-index: 9999;
+}
+
+.btn-group {
+  position: relative;
+  color: white;
+  text-align: center;
+  margin-bottom: 1px;
+  cursor: pointer;
+}
+
+.btn-group .btn {
+  float: right;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  background: #ccc;
+}
+
+.btn-group .label {
+  display: none;
+  float: right;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: right;
+  background: #3399ff;
+  padding: 0 8px;
+}
+
+.btn-group:hover .label {
+  display: block;
+}
+
+.btn-group:hover .btn {
+  background: #3399ff;
+}
+
+.to-top-btn .btn {
+  background: #999;
+}
+
+.to-top-btn:hover .btn {
+  background: #999;
+}

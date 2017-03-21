@@ -1,17 +1,32 @@
 /**
  * Created by deakin on 17-2-27.
  */
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { BigBannerServer } from '../common/big-banner/big-banner-server';
 
 @Component({
   selector: 'app-wrapper',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   public bannerSlides = [
-    {img: 'assets/img/banner_01.jpg'},
-    {img: 'assets/img/banner_01.jpg'},
-    {img: 'assets/img/banner_01.jpg'}
+    {image: 'assets/img/banner_01.jpg'},
+    {image: 'assets/img/banner_01.jpg'},
+    {image: 'assets/img/banner_01.jpg'}
   ];
+
+  constructor(private bigBannerServer: BigBannerServer) {
+  }
+
+  public ngOnInit(): void {
+    this.getBannerList();
+  }
+
+  public getBannerList() {
+    this.bigBannerServer.getBannerList(function (list) {
+      this.bannerSlides = list;
+    }.bind(this));
+  }
 }

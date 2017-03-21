@@ -15,12 +15,69 @@ export class BoardCaseComponent {
   public hColor;
   public hTitle = '案例展示';
 
-  public caseList: CaseItemData[];
+  public navItems = [
+    {
+      id: "1",
+      title: "智能家居"
+    },
+    {
+      id: "2",
+      title: "电商"
+    },
+    {
+      id: "3",
+      title: "医疗"
+    },
+    {
+      id: "4",
+      title: "社交"
+    },
+    {
+      id: "5",
+      title: "直播"
+    },
+    {
+      id: "6",
+      title: "企业"
+    }
+  ]; // 导航列表
+  public curCaseList: CaseItemData[]; // 当前案例列表
+  public curCaseType: string; // 当前案例类型
+  public caseData; // 案例数据
 
   constructor(private caseServer: CaseServer) {
   }
 
   public ngOnInit(): void {
-    this.caseList = this.caseServer.getCaseData();
+    this.initCateData();
+  }
+
+  public initCateData() {
+    for (let i = 0, len = this.navItems.length; i < len; i++) {
+      this.getCaseList(this.navItems[i].id);
+    }
+  }
+
+  public getCaseList(type: string) {
+    this.caseServer.getCaseList({
+      page: 1,
+      pageSize: 4,
+      categoryNo: type
+    }, function (list) {
+      this.caseData['type' + type] = list;
+      if (type === '1') {
+        this.switchList(type); // 默认第一个类型的列表
+      }
+    }.bind(this));
+  }
+
+  public switchList(id: string): void {
+    let list = this.caseData['type' + id];
+    if (list) {
+      this.curCaseList = list;
+      this.curCaseType = this.curCaseList[0]['categoryNo'];
+    } else {
+      this.getCaseList(id);
+    }
   }
 }
