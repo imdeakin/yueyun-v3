@@ -1,0 +1,41 @@
+.con {
+  position: relative;
+  cursor: pointer;
+}
+
+.con > img {
+  width: 100%;
+  height: auto;
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+}
+
+.con:hover .cover {
+  display: none;
+}
+
+.wrap {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 100px;
+  margin-top: -50px;
+}
+
+.icon-font {
+  font-size: 42px;
+  line-height: 1em;
+  padding-bottom: 32px;
+}
+
+.title {
+  font-size: 20px;
+}

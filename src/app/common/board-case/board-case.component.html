@@ -1,0 +1,16 @@
+<div class="con">
+  <div class="container">
+    <board-header [color]="hColor" [title]="hTitle"></board-header>
+    <div class="list-btns">
+      <case-nav></case-nav>
+    </div>
+    <div class="list clearfix">
+      <div class="item x3 padding-left-right-small" *ngFor="let item of caseList">
+        <case-item [data]="item"></case-item>
+      </div>
+    </div>
+    <div class="footer">
+      <button>查看更多案例</button>
+    </div>
+  </div>
+</div>

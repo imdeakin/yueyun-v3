@@ -1,0 +1,8 @@
+.con {
+  background: url("/assets/img/board_bg_01.jpg") no-repeat center/cover;
+}
+
+.container {
+  margin-top: 85px;
+  margin-bottom: 85px;
+}

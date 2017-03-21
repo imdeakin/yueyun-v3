@@ -1,0 +1,21 @@
+.title {
+  position: relative;
+  margin: 0 auto;
+  width: 350px;
+  font-size: 36px;
+  color: #666;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #ccc;
+}
+
+.title > i {
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  width: 60px;
+  height: 5px;
+  margin-left: -30px;
+  background-color: #3399ff;
+}

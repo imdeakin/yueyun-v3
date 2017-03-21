@@ -1,0 +1,10 @@
+<div class="con">
+  <board-header [color]="hColor" [title]="hTitle"></board-header>
+  <div class="container">
+    <div class="list">
+      <div class="item x2" *ngFor="let item of serviceList">
+        <service-item [data]="item"></service-item>
+      </div>
+    </div>
+  </div>
+</div>

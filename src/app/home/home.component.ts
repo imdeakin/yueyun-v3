@@ -10,8 +10,8 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   public bannerSlides = [
-    {img: "assets/img/banner_01.jpg"},
-    {img: "assets/img/banner_01.jpg"},
-    {img: "assets/img/banner_01.jpg"}
+    {img: 'assets/img/banner_01.jpg'},
+    {img: 'assets/img/banner_01.jpg'},
+    {img: 'assets/img/banner_01.jpg'}
   ];
 }
