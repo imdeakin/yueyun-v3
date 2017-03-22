@@ -6,6 +6,8 @@ import { Injectable } from '@angular/core';
 import { ApiServer } from '../../serv/api-server';
 import { ApiConfig } from '../../serv/api-config';
 
+import { ReqOpts } from '../../serv/req-opts';
+
 declare let $: any;
 
 @Injectable()
@@ -14,7 +16,7 @@ export class CaseServer {
   }
 
   public getCaseList(data, success, failure?): void {
-    this.apiServer.post({
+    let opts: ReqOpts = {
       url: ApiConfig.apiPath.getCaseList,
       data: $.param(data),
       success: (data) => {
@@ -23,6 +25,7 @@ export class CaseServer {
       failure: () => {
         console.error('Get case list error!');
       }
-    });
+    };
+    this.apiServer.post(opts);
   }
 }

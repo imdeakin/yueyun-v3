@@ -3,6 +3,8 @@
  */
 import { Component, Input, AfterViewChecked } from '@angular/core';
 
+import { ApiConfig } from '../../serv/api-config';
+
 import Swiper from 'swiper';
 
 @Component({
@@ -15,6 +17,7 @@ export class BigBannerComponent implements AfterViewChecked {
   public curSlides;
   public swiper;
   public conId: string = 'big-banner-swiper';
+  public ApiConfig = ApiConfig;
 
   public ngAfterViewChecked(): void {
     if (this.slides !== this.curSlides) {
@@ -24,7 +27,6 @@ export class BigBannerComponent implements AfterViewChecked {
   }
 
   public initSwiper(): void {
-    console.log('initSwiper');
     this.swiper = new Swiper('#' + this.conId, {
       loop: true,
       autoplay: 3000,

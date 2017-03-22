@@ -12,7 +12,7 @@ import { User } from './user';
   styleUrls: ['board-contact.component.css']
 })
 export class BoardContactComponent {
-  public hColor = "white";
+  public hColor = 'white';
   public hTitle = '联系我们';
 
   public data = {
@@ -24,11 +24,18 @@ export class BoardContactComponent {
     vcode: 'assets/img/vcode.jpg'
   };
 
+  // public user: User = {
+  //   name: 'Deakin',
+  //   phone: '15989029465',
+  //   email: 'deakin@yeah.net',
+  //   word: 'I\'m Deakin'
+  // };
+
   public user: User = {
-    name: 'Deakin',
-    phone: '15989029465',
-    email: 'deakin@yeah.net',
-    word: 'I\'m Deakin'
+    name: '',
+    phone: '',
+    email: '',
+    word: ''
   };
 
   constructor(private contactServer: ContactServer) {

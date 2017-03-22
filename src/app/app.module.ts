@@ -9,6 +9,8 @@ import { ApiServer } from './serv/api-server';
 
 import { AppComponent }  from './app.component';
 
+import { ScrollToTop } from './plugins/scroll-to-top';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -16,7 +18,8 @@ import { AppComponent }  from './app.component';
     HttpModule
   ],
   providers: [
-    ApiServer
+    ApiServer,
+    ScrollToTop
   ],
   declarations: [
     AppComponent

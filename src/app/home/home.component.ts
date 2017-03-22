@@ -25,8 +25,9 @@ export class HomeComponent implements OnInit {
   }
 
   public getBannerList() {
-    this.bigBannerServer.getBannerList(function (list) {
-      this.bannerSlides = list;
-    }.bind(this));
+    let $this = this;
+    this.bigBannerServer.getBannerList((list) => {
+      $this.bannerSlides = list;
+    });
   }
 }

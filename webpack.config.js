@@ -3,6 +3,7 @@
  */
 
 // Look in ./config folder for webpack.dev.js
+process.env.NODE_ENV = 'prod';
 switch (process.env.NODE_ENV) {
   case 'prod':
   case 'production':

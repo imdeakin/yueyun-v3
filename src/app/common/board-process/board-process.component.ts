@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
   styleUrls: ['board-process.component.css']
 })
 export class BoardProcessComponent {
-  public hColor = "white";
+  public hColor = 'white';
   public hTitle = '开发流程';
 
   public data = {

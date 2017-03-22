@@ -3,6 +3,8 @@
  */
 import { Component, Input } from '@angular/core';
 
+import { ApiConfig } from '../../serv/api-config';
+
 import { CaseItemData } from './case-item-data';
 
 @Component({
@@ -12,4 +14,5 @@ import { CaseItemData } from './case-item-data';
 })
 export class CaseItemComponent {
   @Input() public data: CaseItemData;
+  public ApiConfig = ApiConfig;
 }

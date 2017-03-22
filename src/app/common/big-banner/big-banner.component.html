@@ -1,7 +1,7 @@
 <div id="{{conId}}" class="swiper-container">
   <div class="swiper-wrapper">
     <div class="swiper-slide" *ngFor="let slide of slides">
-      <img src="{{slide.image}}" class="img-fluid">
+      <img src="{{ApiConfig.getImgFullPath(slide.image)}}" class="img-fluid">
     </div>
   </div>
   <div class="swiper-pagination"></div>

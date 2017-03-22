@@ -3,6 +3,8 @@
  */
 import { Component, AfterViewInit } from '@angular/core';
 
+import { ScrollToTop } from '../../plugins/scroll-to-top';
+
 declare let $: any;
 
 @Component({
@@ -11,7 +13,10 @@ declare let $: any;
   styleUrls: ['float-btns.component.css']
 })
 export class FloatBtnsComponent implements AfterViewInit {
+  constructor(private scrollToTop: ScrollToTop) {
+  }
+
   public ngAfterViewInit(): void {
-    $('#float-btns .btn-group')
+    this.scrollToTop.init('.to-top-btn');
   }
 }
