@@ -23,7 +23,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   public ngAfterViewInit(): void {
-    console.log($('#app-header .nav'));
     $('#app-header .nav').onePageNav();
   }
 
