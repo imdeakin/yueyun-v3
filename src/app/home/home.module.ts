@@ -20,6 +20,7 @@ import { ServiceItemComponent } from '../common/service-item';
 import { BoardCaseComponent } from '../common/board-case';
 import { CaseNavComponent } from '../common/case-nav';
 import { CaseItemComponent } from '../common/case-item';
+import { CaseListComponent } from '../common/case-list';
 
 // 解决方案
 import { BoardSchemeComponent } from '../common/board-scheme';
@@ -57,17 +58,25 @@ import { BigBannerServer } from '../common/big-banner/big-banner-server';
     AppFooterComponent,
     BigBannerComponent,
     BoardHeaderComponent,
+
     BoardServiceComponent,
     ServiceItemComponent,
+
     BoardCaseComponent,
+    CaseListComponent,
     CaseNavComponent,
     CaseItemComponent,
+
     BoardSchemeComponent,
     SchemeItemComponent,
+
     BoardAboutComponent,
     AboutItemComponent,
+
     BoardContactComponent,
+
     BoardProcessComponent,
+
     FloatBtnsComponent
   ],
   providers: [

@@ -2,13 +2,14 @@
  * Created by Deakin on 2017/3/17 0017.
  */
 import { Component } from '@angular/core';
-
+import { boardIds } from '../../home/board-ids';
 @Component({
   selector: 'board-process',
   templateUrl: 'board-process.component.html',
   styleUrls: ['board-process.component.css']
 })
 export class BoardProcessComponent {
+  public id = boardIds.process;
   public hColor = 'white';
   public hTitle = '开发流程';
 

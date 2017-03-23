@@ -5,13 +5,14 @@ import { Component, OnInit } from '@angular/core';
 
 import { ServiceItemData } from '../service-item/service-item-data';
 import { ServiceServer } from '../service-item/service-server';
-
+import { boardIds } from '../../home/board-ids';
 @Component({
   selector: 'board-service',
   templateUrl: 'board-service.component.html',
   styleUrls: ['board-service.component.css']
 })
 export class BoardServiceComponent implements OnInit {
+  public id = boardIds.service;
   public hColor;
   public hTitle = '我们能做什么';
 

@@ -1,4 +1,4 @@
-<div class="con">
+<div id="{{id}}" class="con">
   <div class="container">
     <board-header [color]="hColor" [title]="hTitle"></board-header>
     <ul class="nav nav-inline clearfix">
@@ -6,11 +6,7 @@
           (click)="switchList(item.id)"
           [class.active]="curCaseType === item.id"><a href="javascript:;">{{item.title}}</a></li>
     </ul>
-    <div class="list clearfix">
-      <div class="item x3 padding-left-right-small" *ngFor="let item of curCaseList">
-        <case-item [data]="item"></case-item>
-      </div>
-    </div>
+    <case-list [list]="curCaseList"></case-list>
     <div class="footer">
       <button>查看更多案例</button>
     </div>
