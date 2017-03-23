@@ -28,8 +28,6 @@ const HMR = helpers.hasProcessFlag('hot');
 const AOT = helpers.hasNpmFlag('aot');
 const METADATA = {
   title: '广州APP开发|网站建设|微网站制作|IT开发 - 悦云',
-  description:'广州悦云信息科技立足于提供整套移动互联网定制研发解决方案—我们专注于APP行业应用开发、软件定制开发企业资源计划ERP开发、微信应用开发、网站建设等。我们专业提供需求评估、项目规划、视觉设计、前端制作、程序开发等。',
-  keyword:'APP开发,广州APP开发,广州APP开发公司,网站制作,广州网站制作,网站设计,网页制作,广州网站建设公司,悦云',
   baseUrl: '/',
   isDevServer: helpers.isWebpackDevServer()
 };
