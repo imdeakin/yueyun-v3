@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
 import { AboutItemData } from '../about-item/about-item-data';
 import { AboutServer } from '../about-item/about-server';
 
+import { boardIds } from '../../home/board-ids';
+
 @Component({
   selector: 'board-about',
   templateUrl: 'board-about.component.html',
@@ -19,6 +21,7 @@ export class BoardAboutComponent implements OnInit {
     '我们的服务宗旨：为客户提供尖端的服务和优质的产品技术质量保证为宗旨!<br/>' +
     '我们的员工准则：用心做事，诚实做人!<br/>' +
     '我们的企业文化：服务于客户，贡献于社会！';
+  public id = boardIds.about;
 
   public aboutList: AboutItemData[];
 

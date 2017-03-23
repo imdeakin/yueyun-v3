@@ -6,12 +6,16 @@ import { Component, OnInit } from '@angular/core';
 import { CaseItemData } from '../case-item/case-item-data';
 import { CaseServer } from '../case-item/case-server';
 
+import { boardIds } from '../../home/board-ids';
+
 @Component({
   selector: 'board-case',
   templateUrl: 'board-case.component.html',
   styleUrls: ['board-case.component.css']
 })
 export class BoardCaseComponent implements OnInit {
+  public id = boardIds.case;
+
   public hColor;
   public hTitle = '案例展示';
 

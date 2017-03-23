@@ -1,16 +1,18 @@
 /**
  * Created by deakin on 17-2-27.
  */
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 
 import { BigBannerServer } from '../common/big-banner/big-banner-server';
+
+declare let $: any;
 
 @Component({
   selector: 'app-wrapper',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewInit {
   public bannerSlides = [
     {image: 'assets/img/banner_01.jpg'},
     {image: 'assets/img/banner_01.jpg'},
@@ -18,6 +20,11 @@ export class HomeComponent implements OnInit {
   ];
 
   constructor(private bigBannerServer: BigBannerServer) {
+  }
+
+  public ngAfterViewInit(): void {
+    console.log($('#app-header .nav'));
+    $('#app-header .nav').onePageNav();
   }
 
   public ngOnInit(): void {

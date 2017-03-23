@@ -1,17 +1,5 @@
-<div class="con">
-  <img class="img-fluid" src="{{ApiConfig.getImgFullPath(data.image)}}">
-  <div class="content padding-top-bottom">
-    <div class="height-big">
-      <span class="x3 text-right text-sub">名称：</span>
-      <span class="x9 weight-big border-bottom border-sub">{{data.categoryName}}</span>
-    </div>
-    <div class="height-big">
-      <span class="x3 text-right text-sub">类型：</span>
-      <span class="x9 border-bottom border-sub text-sub">{{data.type}}</span>
-    </div>
-    <div class="height-big">
-      <span class="x3 text-right text-sub">功能：</span>
-      <span class="x9 border-bottom border-sub text-sub">{{data.func}}</span>
-    </div>
+<div class="list clearfix">
+  <div class="item x3 padding-left-right-small" *ngFor="let item of list">
+    <case-item [data]="item"></case-item>
   </div>
 </div>

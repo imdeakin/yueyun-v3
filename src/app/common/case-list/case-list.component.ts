@@ -3,16 +3,13 @@
  */
 import { Component, Input } from '@angular/core';
 
-import { ApiConfig } from '../../serv/api-config';
-
-import { CaseItemData } from './case-item-data';
+import { CaseItemData } from '../case-item/case-item-data';
 
 @Component({
-  selector: 'case-item',
-  templateUrl: 'case-item.component.html',
-  styleUrls: ['case-item.component.css']
+  selector: 'case-list',
+  templateUrl: 'case-list.component.html',
+  styleUrls: ['case-list.component.css']
 })
-export class CaseItemComponent {
-  @Input() public data: CaseItemData;
-  public ApiConfig = ApiConfig;
+export class CaseListComponent {
+  @Input() public list: CaseItemData[];
 }

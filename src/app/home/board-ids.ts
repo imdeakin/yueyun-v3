@@ -1,8 +1,9 @@
 /**
  * Created by Deakin on 2017/3/23 0023.
  */
-export let boardTitleIds = {
+export let boardIds = {
   home: 'home-page',
+  service: 'service-page',
   case: 'case-page',
   scheme: 'scheme-page',
   process: 'process-page',

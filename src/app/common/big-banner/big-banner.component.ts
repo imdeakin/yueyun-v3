@@ -7,6 +7,8 @@ import { ApiConfig } from '../../serv/api-config';
 
 import Swiper from 'swiper';
 
+import { boardIds } from '../../home/board-ids';
+
 @Component({
   selector: 'big-banner',
   templateUrl: 'big-banner.component.html',
@@ -16,7 +18,7 @@ export class BigBannerComponent implements AfterViewChecked {
   @Input() public slides;
   public curSlides;
   public swiper;
-  public conId: string = 'big-banner-swiper';
+  public conId: string = boardIds.home;
   public ApiConfig = ApiConfig;
 
   public ngAfterViewChecked(): void {

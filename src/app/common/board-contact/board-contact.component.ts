@@ -6,12 +6,16 @@ import { Component } from '@angular/core';
 import { ContactServer } from './contact-server';
 import { User } from './user';
 
+import { boardIds } from '../../home/board-ids';
+
 @Component({
   selector: 'board-contact',
   templateUrl: 'board-contact.component.html',
   styleUrls: ['board-contact.component.css']
 })
 export class BoardContactComponent {
+  public id = boardIds.contact;
+
   public hColor = 'white';
   public hTitle = '联系我们';
 
