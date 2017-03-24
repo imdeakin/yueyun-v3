@@ -1,0 +1,25 @@
+.body {
+  background: url("/assets/img/page_bg_01.jpg") no-repeat top/contain #f6f6f6;
+  padding-bottom: 125px;
+}
+
+.header {
+  padding: 140px 0 60px;
+  text-align: center;
+  color: white;
+}
+
+.header h1 {
+  font-size: 60px;
+  line-height: 1em;
+  margin-bottom: 20px;
+}
+
+.header h3 {
+  font-size: 32px;
+  line-height: 1em;
+}
+
+.content {
+  background: white;
+}

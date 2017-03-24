@@ -1,19 +1,18 @@
 /**
  * Created by Deakin on 2017/3/17 0017.
  */
-import { Component, Input, AfterViewInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 import { boardIds } from '../../home/board-ids';
-
-declare let $: any;
 
 @Component({
   selector: 'app-header',
   templateUrl: 'app-header.component.html',
   styleUrls: ['app-header.component.css']
 })
-export class AppHeaderComponent implements AfterViewInit {
+export class AppHeaderComponent implements OnInit {
   @Input() public activeIndex;
+  @Input() public type;
   public items = [
     {
       title: '首页',
@@ -43,8 +42,35 @@ export class AppHeaderComponent implements AfterViewInit {
   public tel = '020-37579981';
   public id = 'app-header';
 
-  public ngAfterViewInit(): void {
-    $('#' + this.id + ' .nav').onePageNav();
+  public ngOnInit(): void {
+    if (this.type == 1) {
+      this.items = [
+        {
+          title: '首页',
+          url: '/home'
+        },
+        {
+          title: '案例展示',
+          url: '/case-center'
+        },
+        {
+          title: '解决方案',
+          url: '/scheme-center'
+        },
+        {
+          title: '开发流程',
+          url: '/process-center'
+        },
+        {
+          title: '关于我们',
+          url: '/about'
+        },
+        {
+          title: '格局',
+          url: '/geju'
+        }
+      ]
+    }
   }
 
   public getItemStyle(index: number) {

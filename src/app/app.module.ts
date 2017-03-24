@@ -54,13 +54,24 @@ import { ContactServer } from './common/board-contact/contact-server';
 import { BigBannerServer } from './common/big-banner/big-banner-server';
 
 // 页面
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './home';
+import { CaseCenterComponent } from './case-center';
+// import { CaseListComponent2 } from './case-center/case-list';
+import { CaseListServer } from './case-center/case-list-server';
+import { CaseContentComponent } from './case-center/case-content';
+import { SchemeCenterComponent } from './scheme-center';
+
+// 路由
+import { AppRoutingModule } from './app-routing.module';
+import { CaseRoutingModule } from './case-center/case-routing.module';
 
 @NgModule({
   imports: [
     BrowserModule,
     HttpModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule,
+    CaseRoutingModule
   ],
   providers: [
     ApiServer,
@@ -70,11 +81,15 @@ import { HomeComponent } from './home/home.component';
     SchemeServer,
     AboutServer,
     ContactServer,
-    BigBannerServer
+    BigBannerServer,
+    CaseListServer
   ],
   declarations: [
     AppComponent,
     HomeComponent,
+    CaseCenterComponent,
+    CaseContentComponent,
+    SchemeCenterComponent,
 
     AppHeaderComponent,
     AppFooterComponent,

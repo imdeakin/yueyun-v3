@@ -8,7 +8,6 @@ import { BigBannerServer } from '../common/big-banner/big-banner-server';
 declare let $: any;
 
 @Component({
-  selector: 'app-wrapper',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })

@@ -1,0 +1,11 @@
+<div id="{{id}}" class="con">
+  <ul class="nav nav-inline clearfix">
+    <li *ngFor="let item of navItems"
+        routerLink="{{'/case-center/' + item.id}}"
+        [class.active]="curCaseType === item.id"><a href="javascript:;">{{item.title}}</a></li>
+  </ul>
+  <div class="list">
+    <case-list [list]="curCaseList"></case-list>
+  </div>
+  <div class="pagination"></div>
+</div>

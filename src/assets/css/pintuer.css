@@ -8823,3 +8823,39 @@ a:focus, a:hover {
 .icon-font:before {
   content: normal;
 }
+
+/*分页导航*/
+.pagination {
+  display: block;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.pagination .pager, .pagination .prev, .pagination .next {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  margin: 0 6px;
+}
+
+.pagination .pager:hover, .pagination .prev:hover, .pagination .next:hover {
+  border-radius: 0;
+  text-decoration: underline;
+}
+
+.pagination .pager.current {
+  color: #333;
+  border-color: transparent;
+}
+
+.pagination .current:hover {
+  text-decoration: none;
+}
+
+.pagination .prev, .pagination .next {
+  color: #333;
+}
+
+.pagination .prev.current, .pagination .next.current {
+  color: #ccc;
+}

@@ -4,10 +4,19 @@
       <img class="img-fluid" src="assets/img/logo.png">
     </div>
     <div class="float-right">
-      <ul class="nav nav-inline">
+      <ul class="nav nav-inline" *ngIf="!type">
         <li *ngFor="let item of items; let i = index"
             [class.active]="activeIndex === i">
           <a href="{{item.url}}"
+             class="text-big"
+             [ngClass]="getItemStyle(i)">{{item.title}}</a>
+        </li>
+      </ul>
+      <ul class="nav nav-inline" *ngIf="type == 1">
+        <li *ngFor="let item of items; let i = index"
+            [class.active]="activeIndex === i"
+            routerLink="{{item.url}}">
+          <a href="javascript:;"
              class="text-big"
              [ngClass]="getItemStyle(i)">{{item.title}}</a>
         </li>
