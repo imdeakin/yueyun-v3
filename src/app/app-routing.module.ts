@@ -5,13 +5,19 @@ import { NgModule }              from '@angular/core';
 import { RouterModule, Routes }  from '@angular/router';
 
 import { HomeComponent } from './home';
-// import { CaseCenterComponent } from './case-center';
+import { CaseDetailComponent } from './case-detail';
+import { SchemeDetailComponent } from './scheme-detail';
 import { SchemeCenterComponent } from './scheme-center';
+import { AboutDetailComponent } from './about-detail';
+import { GejuComponent } from './geju';
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
-  // {path: 'case-center', component: CaseCenterComponent},
+  {path: 'case-detail/:id', component: CaseDetailComponent},
+  {path: 'scheme-detail/:id', component: SchemeDetailComponent},
   {path: 'scheme-center', component: SchemeCenterComponent},
+  {path: 'about', component: AboutDetailComponent},
+  {path: 'geju', component: GejuComponent},
   {path: '', redirectTo: '/home', pathMatch: 'full'}
   // {path: '**', component: PageNotFoundComponent}
 ];

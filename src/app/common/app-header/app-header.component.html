@@ -7,17 +7,24 @@
       <ul class="nav nav-inline" *ngIf="!type">
         <li *ngFor="let item of items; let i = index"
             [class.active]="activeIndex === i">
-          <a href="{{item.url}}"
-             class="text-big"
-             [ngClass]="getItemStyle(i)">{{item.title}}</a>
+          <template [ngIf]="item.link">
+            <div class="text-big"
+               routerLink="{{item.link}}"
+               [ngClass]="getItemStyle(i)">{{item.title}}</div>
+          </template>
+          <template [ngIf]="!item.link">
+            <a href="{{item.url}}"
+               class="text-big"
+               [ngClass]="getItemStyle(i)">{{item.title}}</a>
+          </template>
         </li>
       </ul>
       <ul class="nav nav-inline" *ngIf="type == 1">
         <li *ngFor="let item of items; let i = index"
-            [class.active]="activeIndex === i"
-            routerLink="{{item.url}}">
+            [class.active]="activeIndex === i">
           <a href="javascript:;"
              class="text-big"
+             routerLink="{{item.url}}"
              [ngClass]="getItemStyle(i)">{{item.title}}</a>
         </li>
       </ul>

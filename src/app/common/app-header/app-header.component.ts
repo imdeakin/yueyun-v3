@@ -36,7 +36,7 @@ export class AppHeaderComponent implements OnInit {
     },
     {
       title: '格局',
-      url: 'geju.html'
+      link: '/geju'
     }
   ];
   public tel = '020-37579981';
@@ -53,14 +53,14 @@ export class AppHeaderComponent implements OnInit {
           title: '案例展示',
           url: '/case-center'
         },
-        {
-          title: '解决方案',
-          url: '/scheme-center'
-        },
-        {
-          title: '开发流程',
-          url: '/process-center'
-        },
+        // {
+        //   title: '解决方案',
+        //   url: '/scheme-center'
+        // },
+        // {
+        //   title: '开发流程',
+        //   url: '/process-center'
+        // },
         {
           title: '关于我们',
           url: '/about'

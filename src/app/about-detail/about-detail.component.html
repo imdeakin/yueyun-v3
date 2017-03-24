@@ -1,0 +1,59 @@
+<app-header [activeIndex]="2" [type]="1"></app-header>
+<div class="body">
+  <div class="container">
+    <div class="about">
+      <board-about></board-about>
+    </div>
+    <div class="advant">
+      <board-header [title]="serviceAdvant.title"></board-header>
+      <p>{{serviceAdvant.content}}</p>
+    </div>
+    <div class="why">
+      <board-header [title]="'为什么选择悦云'"></board-header>
+      <div class="group clearfix">
+        <img class="x5" src="assets/img/about_why_01.jpg">
+        <div class="x7 art">
+          <div class="header">
+            <h3 class="title">专业团队</h3>
+            <h5 class="subtitle">professional team</h5>
+            <div class="line"></div>
+          </div>
+          <div class="content">
+            <div class="describe" *ngFor="let item of teamExplainList">
+              <span class="label">{{item.title}}：</span>
+              <span class="text">{{item.content}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="group clearfix">
+        <img class="x5" src="assets/img/about_why_02.jpg">
+        <div class="x7 art">
+          <div class="header">
+            <h3 class="title">专业流程</h3>
+            <h5 class="subtitle">professional team</h5>
+            <div class="line"></div>
+          </div>
+          <div class="content">
+            <div class="describe">{{processExplain.content}}</div>
+          </div>
+        </div>
+      </div>
+      <div class="group clearfix">
+        <img class="x5" src="assets/img/about_why_02.jpg">
+        <div class="x7 art">
+          <div class="header">
+            <h3 class="title">知名企业的优秀合作伙伴</h3>
+            <h5 class="subtitle">professional process</h5>
+            <div class="line"></div>
+          </div>
+          <div class="content">
+            <div class="describe">{{partnerExplain.content}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
+<float-btns></float-btns>

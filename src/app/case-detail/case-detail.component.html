@@ -1,0 +1,18 @@
+<app-header [activeIndex]="1" [type]="1"></app-header>
+<div class="body">
+  <div class="container">
+    <div class="article">
+      <div class="header">{{title}}</div>
+      <div class="content" [innerHtml]="content"></div>
+    </div>
+    <div class="list clearfix">
+      <div class="item x4 padding-left-right-small" *ngFor="let item of caseList">
+        <div class="wrap">
+          <case-item [data]="item"></case-item>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
+<float-btns></float-btns>

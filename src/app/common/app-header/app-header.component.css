@@ -26,6 +26,17 @@
   font-weight: normal;
 }
 
+.nav li div, .nav li div {
+  padding: 5px 20px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.nav li.active div, .nav li div:hover {
+  color: #0099cc;
+  font-weight: normal;
+}
+
 .tel {
   float: right;
   line-height: 28px;

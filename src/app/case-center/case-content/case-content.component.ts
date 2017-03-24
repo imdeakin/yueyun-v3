@@ -1,7 +1,7 @@
 /**
  * Created by Deakin on 2017/3/17 0017.
  */
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import 'rxjs/add/operator/switchMap';
 
@@ -16,7 +16,7 @@ declare let $: any;
   templateUrl: 'case-content.component.html',
   styleUrls: ['case-content.component.css']
 })
-export class CaseContentComponent implements OnInit,AfterViewInit {
+export class CaseContentComponent implements OnInit {
   public id: string = 'case-content';
   public navItems = caseNavData; // 导航列表
   public curCaseList: CaseItemData[]; // 当前案例列表
@@ -54,10 +54,6 @@ export class CaseContentComponent implements OnInit,AfterViewInit {
           $this.initPagination(total);
         });
       });
-
-  }
-
-  public ngAfterViewInit(): void {
   }
 
   public initPagination(total) {

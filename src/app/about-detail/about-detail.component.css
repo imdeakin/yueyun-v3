@@ -1,0 +1,69 @@
+.body {
+  background: url("/assets/img/page_bg_03.jpg") no-repeat top/contain #f6f6f6;
+  padding-top: 140px;
+  padding-bottom: 125px;
+}
+
+.article {
+  padding: 36px;
+}
+
+.about {
+  padding-bottom: 68px;
+  background: white;
+}
+
+.advant {
+
+}
+
+.advant > p {
+  padding: 62px 55px;
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  text-indent: 2em;
+}
+
+.why {
+  background: white;
+  padding-bottom: 64px;
+}
+
+.why .group {
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+.group .art {
+  padding-left: 10%;
+}
+
+.art .header .title {
+  font-size: 28px;
+  color: #666;
+}
+
+.art .header .subtitle {
+  font-size: 16px;
+  color: #999;
+}
+
+.art .header .line {
+  margin-top: 20px;
+  width: 62px;
+  height: 3px;
+  background: #3399ff;
+}
+
+.art .describe {
+  color: #666;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 32px;
+}
+
+.describe .label {
+  display: inline;
+  color: black;
+}

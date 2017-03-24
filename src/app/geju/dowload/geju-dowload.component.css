@@ -1,0 +1,50 @@
+.con {
+  position: relative;
+  background: url("/assets/img/geju_board_bg_02.jpg") repeat left top;
+}
+
+.main {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding-top: 100px;
+}
+
+.art {
+  margin: 0 auto;
+  width: 340px;
+}
+
+.art .title {
+  font-size: 40px;
+  color: white;
+  line-height: 75px;
+}
+
+.art .content {
+  font-size: 20px;
+  color: white;
+}
+
+.art .btns {
+  margin-top: 52px;
+  text-align: center;
+}
+
+.art .btns .btn {
+  line-height: 48px;
+  width: 150px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 4px;
+  color: white;
+}
+
+.art .btns .btn1 {
+  float: left;
+}
+
+.art .btns .btn2 {
+  float: right;
+}

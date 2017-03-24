@@ -1,0 +1,28 @@
+<div class="con">
+  <div class="container">
+    <div class="x4">
+      <div class="art">
+        <div class="title">格局开启智能协会管理新变革</div>
+        <div class="content">
+          <p>随时随地发起的，多人直播/视频会议<br>发布公告分享最新资源</p>
+          <p>了解协会成员状态，签到，添加日程，助力协会提升业绩和工作效率</p>
+          <p>简单便捷管理我的协会</p>
+          <p>协会内联系人名片，统一管理，随时随地找人</p>
+        </div>
+        <div class="foot">一个创新的协会办公工具</div>
+      </div>
+    </div>
+    <div class="x8 text-right">
+      <div class="imgs" (mouseleave)="imgIndex = 0">
+        <div class="img-group img-group1" (mouseenter)="imgIndex = 0" [class.active]="imgIndex === 0">
+          <img src="assets/img/pic_1.png">
+          <div class="cover"></div>
+        </div>
+        <div class="img-group img-group2" (mouseenter)="imgIndex = 1" [class.active]="imgIndex === 1">
+          <img src="assets/img/pic_2.png">
+          <div class="cover"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -52,14 +52,22 @@ import { SchemeServer } from './common/scheme-item/scheme-server';
 import { AboutServer } from './common/about-item/about-server';
 import { ContactServer } from './common/board-contact/contact-server';
 import { BigBannerServer } from './common/big-banner/big-banner-server';
+import { CaseDetailServer } from './case-detail/case-detail-server';
+import { SchemeDetailServer } from './scheme-detail/scheme-detail-server';
 
 // 页面
 import { HomeComponent } from './home';
 import { CaseCenterComponent } from './case-center';
-// import { CaseListComponent2 } from './case-center/case-list';
 import { CaseListServer } from './case-center/case-list-server';
 import { CaseContentComponent } from './case-center/case-content';
 import { SchemeCenterComponent } from './scheme-center';
+import { CaseDetailComponent } from './case-detail';
+import { SchemeDetailComponent } from './scheme-detail';
+import { AboutDetailComponent } from './about-detail';
+import { GejuComponent } from './geju';
+import { GejuDownloadComponent } from './geju/dowload';
+import { GejuPage2Component } from './geju/page2';
+import { GejuPage4Component } from './geju/page4';
 
 // 路由
 import { AppRoutingModule } from './app-routing.module';
@@ -82,7 +90,9 @@ import { CaseRoutingModule } from './case-center/case-routing.module';
     AboutServer,
     ContactServer,
     BigBannerServer,
-    CaseListServer
+    CaseListServer,
+    CaseDetailServer,
+    SchemeDetailServer
   ],
   declarations: [
     AppComponent,
@@ -114,7 +124,16 @@ import { CaseRoutingModule } from './case-center/case-routing.module';
 
     BoardProcessComponent,
 
-    FloatBtnsComponent
+    FloatBtnsComponent,
+
+    CaseDetailComponent,
+    SchemeDetailComponent,
+    AboutDetailComponent,
+
+    GejuComponent,
+    GejuDownloadComponent,
+    GejuPage2Component,
+    GejuPage4Component,
   ],
   bootstrap: [AppComponent]
 })

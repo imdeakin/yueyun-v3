@@ -1,0 +1,46 @@
+.con {
+  background: url("/assets/img/geju_board_bg_04.jpg") no-repeat center;
+  padding: 100px 0;
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 840px;
+}
+
+.card-group {
+  float: left;
+  width: 280px;
+  text-align: center;
+  color: white;
+}
+
+.card-group .icon-font {
+  font-size: 72px;
+}
+
+.card-group .title {
+  margin: 20px auto;
+  width: 128px;
+  font-size: 18px;
+  line-height: 40px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.text-group {
+  padding-left: 76px;
+  color: white;
+  margin-top: 40px;
+}
+
+.text-group > h3 {
+  font-size: 24px;
+}
+
+.text-group > h4 {
+  font-size: 18px;
+}
+
+
+

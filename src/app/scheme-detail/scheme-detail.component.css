@@ -1,0 +1,24 @@
+.body {
+  background: url("/assets/img/page_bg_03.jpg") no-repeat top/contain #f6f6f6;
+  padding-top: 140px;
+  padding-bottom: 125px;
+}
+
+.article {
+  background: white;
+  padding: 36px;
+}
+
+.header {
+  font-size: 30px;
+  text-align: center;
+}
+
+.content {
+  margin-top: 80px;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+}

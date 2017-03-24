@@ -10,6 +10,8 @@ export class ApiConfig {
     getPartnerList: ApiConfig.root + '/mainController/getPartnerList', // 获取合作伙伴列表
     getCategory: ApiConfig.root + '/mainController/getCategory', // 获取成功案例的类型列表
     getCaseList: ApiConfig.root + '/mainController/getNewCaseList', // 获取成功案例列表
+    getCaseDetail: ApiConfig.root + '/mainController/getNewCase', // 获取成功案例列表
+    getSchemeDetail: ApiConfig.root + '/mainController/getSolution', // 获取解决方案详情
     contact: ApiConfig.root + '/mainController/note', // 提交联系信息
   };
 
