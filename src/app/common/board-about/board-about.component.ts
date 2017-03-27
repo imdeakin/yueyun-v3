@@ -1,7 +1,7 @@
 /**
  * Created by Deakin on 2017/3/17 0017.
  */
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 import { AboutItemData } from '../about-item/about-item-data';
 import { AboutServer } from '../about-item/about-server';
@@ -14,6 +14,7 @@ import { boardIds } from '../../home/board-ids';
   styleUrls: ['board-about.component.css']
 })
 export class BoardAboutComponent implements OnInit {
+  @Input() public hasFooter = true;
   public hColor;
   public hTitle = '关于我们';
   public content = '广州悦云信息科技立足于提供整套移动互联网定制研发解决方案—我们专注于APP行业应用开发、软件定制开发企业资源计划ERP开发、<br/>' +

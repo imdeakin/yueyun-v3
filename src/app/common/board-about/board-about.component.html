@@ -7,7 +7,7 @@
         <about-item [data]="item"></about-item>
       </div>
     </div>
-    <div class="footer">
+    <div class="footer" *ngIf="hasFooter">
       <button routerLink="/about">查看更多信息</button>
     </div>
   </div>

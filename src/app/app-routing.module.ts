@@ -10,6 +10,7 @@ import { SchemeDetailComponent } from './scheme-detail';
 import { SchemeCenterComponent } from './scheme-center';
 import { AboutDetailComponent } from './about-detail';
 import { GejuComponent } from './geju';
+import { GejuLoadPageComponent } from './geju/load-page';
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -17,7 +18,8 @@ const appRoutes: Routes = [
   {path: 'scheme-detail/:id', component: SchemeDetailComponent},
   {path: 'scheme-center', component: SchemeCenterComponent},
   {path: 'about', component: AboutDetailComponent},
-  {path: 'geju', component: GejuComponent},
+  {path: 'geju', component: GejuLoadPageComponent},
+  {path: 'geju-home', component: GejuComponent},
   {path: '', redirectTo: '/home', pathMatch: 'full'}
   // {path: '**', component: PageNotFoundComponent}
 ];

@@ -1,31 +1,16 @@
 <div class="con">
   <div class="container">
     <div class="wrap clearfix">
-      <div class="card-group">
-        <i class="icon-font">&#xe6b4;</i>
-        <div class="title">我的名片</div>
-      </div>
-      <div class="card-group">
-        <i class="icon-font">&#xe6b4;</i>
-        <div class="title">我的名片</div>
-      </div>
-      <div class="card-group">
-        <i class="icon-font">&#xe6b4;</i>
-        <div class="title">我的名片</div>
+      <div class="card-group" *ngFor="let item of data;let i = index;"
+           (mouseenter)="switchCard(i);" [class.active]="curIndex === i">
+        <i class="icon-font" [innerHtml]="item.icon"></i>
+        <div class="title">{{item.title}}</div>
       </div>
     </div>
     <div class="wrap">
-      <div class="text-group">
-        <h3>•随时随地发通知</h3>
-        <h4>发送图文通知，重要信息图文并茂</h4>
-      </div>
-      <div class="text-group">
-        <h3>•已读未读清晰掌握</h3>
-        <h4>保障最新通知资讯无遗漏</h4>
-      </div>
-      <div class="text-group">
-        <h3>•海量的合作机会</h3>
-        <h4>各协会之间资讯相通无障碍，一个平台全搞定。</h4>
+      <div class="text-group" *ngFor="let item of data[curIndex].data;let i = index;">
+        <h3>•{{item.title}}</h3>
+        <h4>{{item.content}}</h4>
       </div>
     </div>
   </div>

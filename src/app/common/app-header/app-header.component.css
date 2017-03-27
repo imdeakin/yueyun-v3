@@ -39,8 +39,15 @@
 
 .tel {
   float: right;
-  line-height: 28px;
-  border-radius: 12px;
+  font-size: 20px;
+  line-height: 32px;
+  border-radius: 17px;
   margin-top: 20px;
   padding: 0 10px;
+  color: #3399ff;
+}
+
+.tel > i {
+  font-size: 28px;
+  margin-left: 6px;
 }

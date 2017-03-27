@@ -19,13 +19,27 @@
   padding: 10px 0;
   margin: 0;
   font-size: 20px;
+  font-weight: 100;
 }
 
 .art .foot {
+  position: relative;
   color: #666;
   text-align: center;
   font-size: 18px;
   margin-top: 70px;
+}
+
+.foot .line {
+  position: absolute;
+  top: 50%;
+  width: 60px;
+  height: 1px;
+  background: #666;
+}
+
+.foot .line2 {
+  right: 0;
 }
 
 .imgs {

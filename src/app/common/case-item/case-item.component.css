@@ -1,8 +1,9 @@
 .con {
   background: white;
+  cursor: pointer;
 }
 
-.func-line {
-  height: 61px;
+.func-line .val {
+  height: 60px;
   overflow: hidden;
 }
