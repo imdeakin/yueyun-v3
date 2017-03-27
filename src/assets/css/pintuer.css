@@ -8804,19 +8804,11 @@ a:focus, a:hover {
 
 @font-face {
   font-family: 'iconfont';  /* project id 249140 */
-<<<<<<< HEAD
   src: url('//at.alicdn.com/t/font_hfi282jm749ozuxr.eot');
   src: url('//at.alicdn.com/t/font_hfi282jm749ozuxr.eot?#iefix') format('embedded-opentype'),
   url('//at.alicdn.com/t/font_hfi282jm749ozuxr.woff') format('woff'),
   url('//at.alicdn.com/t/font_hfi282jm749ozuxr.ttf') format('truetype'),
   url('//at.alicdn.com/t/font_hfi282jm749ozuxr.svg#iconfont') format('svg');
-=======
-  src: url('//at.alicdn.com/t/font_cavkdj19pof4unmi.eot');
-  src: url('//at.alicdn.com/t/font_cavkdj19pof4unmi.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_cavkdj19pof4unmi.woff') format('woff'),
-  url('//at.alicdn.com/t/font_cavkdj19pof4unmi.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_cavkdj19pof4unmi.svg#iconfont') format('svg');
->>>>>>> 1529509c1c72e6ef0fc8a11cdbab9a37fac3f023
 }
 
 .icon-font {
