@@ -48,3 +48,7 @@
 .art .btns .btn2 {
   float: right;
 }
+
+.btn .icon-font {
+  font-size: 24px;
+}

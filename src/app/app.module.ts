@@ -67,6 +67,7 @@ import { AboutDetailComponent } from './about-detail';
 import { GejuComponent } from './geju';
 import { GejuDownloadComponent } from './geju/dowload';
 import { GejuPage2Component } from './geju/page2';
+import { GejuPage3Component } from './geju/page3';
 import { GejuPage4Component } from './geju/page4';
 
 // 路由
@@ -133,6 +134,7 @@ import { CaseRoutingModule } from './case-center/case-routing.module';
     GejuComponent,
     GejuDownloadComponent,
     GejuPage2Component,
+    GejuPage3Component,
     GejuPage4Component,
   ],
   bootstrap: [AppComponent]

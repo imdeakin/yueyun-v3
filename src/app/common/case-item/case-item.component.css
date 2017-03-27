@@ -1,3 +1,8 @@
-.con img {
+.con {
+  background: white;
+}
 
+.func-line {
+  height: 61px;
+  overflow: hidden;
 }
