@@ -68,6 +68,11 @@
   right: 110px;
 }
 
+#h10 {
+  bottom: -40px;
+  right: 285px;
+}
+
 @keyframes bgLight {
   from {
     background-color: transparent;
