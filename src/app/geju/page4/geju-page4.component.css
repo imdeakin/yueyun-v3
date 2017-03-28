@@ -13,6 +13,7 @@
   width: 280px;
   text-align: center;
   color: white;
+  cursor: pointer;
 }
 
 .card-group .icon-font {
@@ -28,6 +29,11 @@
   border-radius: 20px;
 }
 
+.card-group:hover .title, .card-group.active .title {
+  background: white;
+  color: #666;
+}
+
 .text-group {
   padding-left: 76px;
   color: white;
@@ -40,6 +46,7 @@
 
 .text-group > h4 {
   font-size: 18px;
+  font-weight: 100;
 }
 
 

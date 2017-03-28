@@ -31,6 +31,7 @@ export class GejuPage3Component implements AfterViewInit {
       slidesPerView: 2,
       spaceBetween: 20,
       autoHeight: true,
+      observer:true,
       loop: true
     });
   }
@@ -39,6 +40,7 @@ export class GejuPage3Component implements AfterViewInit {
     return new Swiper('#' + this.id + ' .main-swiper .swiper-container', {
       autoHeight: true,
       slidesPerView: 2,
+      observer:true,
       loop: true
     });
   }

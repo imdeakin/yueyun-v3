@@ -37,8 +37,6 @@ export class CaseContentComponent implements OnInit {
       .switchMap((params: Params) => {
         id = params['id'];
         idx = params['idx'] || 0;
-        console.log('id: ' + id);
-        console.log('idx: ' + id);
         $this.curCaseType = id;
         $this.curPageIndex = +idx;
         return this.service.getCaseList({

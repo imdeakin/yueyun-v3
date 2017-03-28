@@ -8,5 +8,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./geju.component.css']
 })
 export class GejuComponent {
-
 }
