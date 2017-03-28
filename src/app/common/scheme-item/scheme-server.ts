@@ -82,7 +82,7 @@ export class SchemeServer {
       id: '11',
       icon: '&#xe621;',
       bg: 'assets/img/scheme_bg_11.png',
-      title: '家政',
+      title: '服务',
       cover: '#66ccff'
     },
     {
