@@ -13,6 +13,10 @@
   cursor: pointer;
 }
 
+.btn-group a {
+  color:white;
+}
+
 .btn-group .btn {
   float: right;
   width: 50px;

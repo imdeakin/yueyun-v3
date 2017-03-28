@@ -12,3 +12,11 @@
   line-height: 24px;
   text-align: center;
 }
+
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}

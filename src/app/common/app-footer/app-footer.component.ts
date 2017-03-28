@@ -9,4 +9,5 @@ import { Component } from '@angular/core';
   styleUrls: ['app-footer.component.css']
 })
 export class AppFooterComponent {
+  public toYear: number = new Date().getFullYear();
 }
