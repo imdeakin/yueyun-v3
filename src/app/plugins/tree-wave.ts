@@ -93,8 +93,6 @@ export let treeWave = (function () {
     mouseX = event.clientX - windowHalfX;
     mouseY = event.clientY - windowHalfY;
 
-    console.log('mouseX: ' + mouseX + ', mouseY: ' + mouseY);
-
   }
 
   function onDocumentTouchStart(event) {

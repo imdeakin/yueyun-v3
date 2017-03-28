@@ -52,7 +52,6 @@ export class BoardCaseComponent implements OnInit {
   }
 
   public switchList(id: string): void {
-    console.log(this.caseData);
     let list = this.caseData['type' + id];
     if (list) {
       this.curCaseList = list;
