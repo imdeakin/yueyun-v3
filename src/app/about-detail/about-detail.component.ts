@@ -1,13 +1,13 @@
 /**
  * Created by deakin on 17-2-27.
  */
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   templateUrl: './about-detail.component.html',
   styleUrls: ['./about-detail.component.css']
 })
-export class AboutDetailComponent {
+export class AboutDetailComponent implements OnInit {
 
   // 服务优势
   public serviceAdvant = {
@@ -62,4 +62,8 @@ export class AboutDetailComponent {
     '我们按照不同行业、不同类型客户的需求特点，总结、提炼各类优秀项目案例，形成了悦云信息科技公司特有的移动应用解决方案。' +
     '专业化流程、优质的服务、丰富的经验以及对创意品质的追求是客户选择我们的理由。'
   };
+
+  public ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
 }
