@@ -17,9 +17,9 @@ export class SchemeServer {
     },
     {
       id: '2',
-      icon: '&#xe640;',
+      icon: '&#xe61c;',
       bg: 'assets/img/scheme_bg_02.png',
-      title: '智能硬件',
+      title: '建筑',
       cover: '#ff9999'
     },
     {
@@ -80,16 +80,16 @@ export class SchemeServer {
     },
     {
       id: '11',
-      icon: '&#xe641;',
+      icon: '&#xe621;',
       bg: 'assets/img/scheme_bg_11.png',
-      title: '图像',
+      title: '家政',
       cover: '#66ccff'
     },
     {
       id: '12',
-      icon: '&#xe61c;',
+      icon: '&#xe6a3;',
       bg: 'assets/img/scheme_bg_12.png',
-      title: '房地产',
+      title: '金融',
       cover: '#9999cc'
     }
   ];
