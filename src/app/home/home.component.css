@@ -1,0 +1,23 @@
+.service-board {
+  background: url("/assets/img/board_bg_01.jpg") no-repeat center/cover;
+}
+
+.case-board {
+  background: url("/assets/img/board_bg_02.jpg") no-repeat center/cover;
+}
+
+.scheme-board {
+  background: url("/assets/img/board_bg_01.jpg") no-repeat center/cover;
+}
+
+.process-board {
+  background: url("/assets/img/board_bg_05.jpg") no-repeat center/cover;
+}
+
+.about-board {
+  background: url("/assets/img/board_bg_03.jpg") no-repeat center/cover;
+}
+
+.contact-board {
+  background: url("/assets/img/board_bg_04.jpg") no-repeat center/cover;
+}

@@ -1,18 +1,18 @@
 .con {
-  background: url("/assets/img/board_bg_03.jpg") no-repeat center/cover;
+  /*background: url("/assets/img/board_bg_03.jpg") no-repeat center/cover;*/
 }
 
-.container {
-  margin-top: 85px;
-  margin-bottom: 85px;
-}
+/*.container {*/
+/*padding-top: 85px;*/
+/*padding-bottom: 85px;*/
+/*}*/
 
 .content {
   text-align: center;
   color: #666;
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: 54px;
+  margin: 54px 0;
 }
 
 .footer {

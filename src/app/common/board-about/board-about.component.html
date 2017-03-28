@@ -1,14 +1,12 @@
 <div id="{{id}}" class="con">
   <board-header [color]="hColor" [title]="hTitle"></board-header>
-  <div class="container">
-    <p class="content" [innerHtml]="content"></p>
-    <div class="list clearfix">
-      <div class="item x2 padding" *ngFor="let item of aboutList">
-        <about-item [data]="item"></about-item>
-      </div>
+  <p class="content" [innerHtml]="content"></p>
+  <div class="list clearfix">
+    <div class="item x2 padding" *ngFor="let item of aboutList">
+      <about-item [data]="item"></about-item>
     </div>
-    <div class="footer" *ngIf="hasFooter">
-      <button routerLink="/about">查看更多信息</button>
-    </div>
+  </div>
+  <div class="footer" *ngIf="hasFooter">
+    <button routerLink="/about">查看更多信息</button>
   </div>
 </div>

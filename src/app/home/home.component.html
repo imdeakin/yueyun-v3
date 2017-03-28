@@ -1,10 +1,34 @@
 <app-header [activeIndex]="0"></app-header>
 <big-banner [slides]="bannerSlides"></big-banner>
-<board-service></board-service>
-<board-case></board-case>
-<board-scheme></board-scheme>
-<board-process></board-process>
-<board-about></board-about>
-<board-contact></board-contact>
+<div class="service-board">
+  <div class="container">
+    <board-service></board-service>
+  </div>
+</div>
+<div class="case-board">
+  <div class="container">
+    <board-case></board-case>
+  </div>
+</div>
+<div class="scheme-board">
+  <div class="container">
+    <board-scheme></board-scheme>
+  </div>
+</div>
+<div class="process-board">
+  <div class="container">
+    <board-process></board-process>
+  </div>
+</div>
+<div class="about-board">
+  <div class="container">
+    <board-about></board-about>
+  </div>
+</div>
+<div class="contact-board">
+  <div class="container">
+    <board-contact></board-contact>
+  </div>
+</div>
 <float-btns></float-btns>
 <app-footer></app-footer>

@@ -1,14 +1,12 @@
 <div id="{{id}}" class="con">
-  <div class="container">
-    <board-header [color]="hColor" [title]="hTitle"></board-header>
-    <ul class="nav nav-inline clearfix">
-      <li *ngFor="let item of navItems"
-          (click)="switchList(item.id)"
-          [class.active]="curCaseType === item.id"><a href="javascript:;">{{item.title}}</a></li>
-    </ul>
-    <case-list [list]="curCaseList"></case-list>
-    <div class="footer">
-      <button routerLink="/case-center">查看更多案例</button>
-    </div>
+  <board-header [color]="hColor" [title]="hTitle"></board-header>
+  <ul class="nav nav-inline clearfix">
+    <li *ngFor="let item of navItems"
+        (click)="switchList(item.id)"
+        [class.active]="curCaseType === item.id"><a href="javascript:;">{{item.title}}</a></li>
+  </ul>
+  <case-list [list]="curCaseList"></case-list>
+  <div class="footer">
+    <button routerLink="/case-center">查看更多案例</button>
   </div>
 </div>

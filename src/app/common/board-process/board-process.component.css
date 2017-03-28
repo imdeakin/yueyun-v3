@@ -1,8 +1,4 @@
-.con {
-  background: url("/assets/img/board_bg_05.jpg") no-repeat center/cover;
-}
-
-.container {
+.content {
   width: 100%;
   margin: 0;
   padding-top: 130px;

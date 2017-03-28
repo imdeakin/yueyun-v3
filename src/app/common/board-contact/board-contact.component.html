@@ -1,6 +1,6 @@
 <div id="{{id}}" class="con">
   <board-header [color]="hColor" [title]="hTitle"></board-header>
-  <div class="container clearfix">
+  <div class="content clearfix">
     <form (ngSubmit)="onSubmit()" class="x6" #contactForm="ngForm">
       <div class="form-group" [class.error]="name.errors && (name.dirty || name.touched)">
         <input type="text" name="name" value="" placeholder="姓名" minlength="2" maxlength="16" required
