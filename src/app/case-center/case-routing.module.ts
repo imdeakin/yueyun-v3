@@ -4,7 +4,7 @@
 import { NgModule }              from '@angular/core';
 import { RouterModule, Routes }  from '@angular/router';
 
-import { CaseCenterComponent } from './case-center.component'
+import { CaseCenterComponent } from './case-center.component';
 import { CaseContentComponent } from './case-content';
 
 const caseRoutes: Routes = [

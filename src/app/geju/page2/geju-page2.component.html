@@ -1,4 +1,4 @@
-<div class="con">
+<div id="{{id}}" class="con">
   <div class="container">
     <div class="x4">
       <div class="art">
@@ -13,12 +13,12 @@
       </div>
     </div>
     <div class="x8 text-right">
-      <div class="imgs" (mouseleave)="imgIndex = 0">
-        <div class="img-group img-group1" (mouseenter)="imgIndex = 0" [class.active]="imgIndex === 0">
+      <div class="imgs">
+        <div class="img-group img-group1 active">
           <img src="assets/img/pic_1.png">
           <div class="cover"></div>
         </div>
-        <div class="img-group img-group2" (mouseenter)="imgIndex = 1" [class.active]="imgIndex === 1">
+        <div class="img-group img-group2">
           <img src="assets/img/pic_2.png">
           <div class="cover"></div>
         </div>

@@ -29,7 +29,7 @@ export class CaseContentComponent implements OnInit {
               private service: CaseListServer) {
   }
 
-  ngOnInit() {
+  public ngOnInit() {
     let $this = this;
     let id: string;
     let idx: string;
@@ -59,10 +59,10 @@ export class CaseContentComponent implements OnInit {
     $('#' + this.id + ' .pagination').pagination(total, {
       items_per_page: $this.perPage,
       current_page: $this.curPageIndex,
-      prev_text: "上一页",
-      next_text: "下一页",
-      link_to: "javascript:;",
-      selected_callback: function (index) {    //页数变化后的回调函数
+      prev_text: '上一页',
+      next_text: '下一页',
+      link_to: 'javascript:;',
+      selected_callback: (index) => {    // 页数变化后的回调函数
         if (index !== $this.curPageIndex) {
           $this.curPageIndex = index;
           $this.router.navigate(['/case-center', $this.curCaseType, {idx: index}]);

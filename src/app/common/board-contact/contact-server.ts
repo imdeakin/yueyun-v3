@@ -21,7 +21,11 @@ export class ContactServer {
   public parseParam(data): string {
     let param = '';
     for (let key in data) {
-      param += (param ? '&' : '') + key + '=' + data[key];
+      if (param) {
+        param += '&' + key + '=' + data[key];
+      } else {
+        param += '' + key + '=' + data[key];
+      }
     }
     return param;
   }

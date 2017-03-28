@@ -12,7 +12,7 @@ import { boardIds } from '../../home/board-ids';
 })
 export class AppHeaderComponent implements OnInit {
   @Input() public activeIndex;
-  @Input() public type;
+  @Input() public type: number;
   public items = [
     {
       title: '首页',
@@ -43,7 +43,7 @@ export class AppHeaderComponent implements OnInit {
   public id = 'app-header';
 
   public ngOnInit(): void {
-    if (this.type == 1) {
+    if (this.type === 1) {
       this.items = [
         {
           title: '首页',
@@ -69,7 +69,7 @@ export class AppHeaderComponent implements OnInit {
           title: '格局',
           url: '/geju'
         }
-      ]
+      ];
     }
   }
 

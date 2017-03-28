@@ -8,7 +8,7 @@ import 'rxjs/add/operator/switchMap';
 import { ApiData } from '../serv/api-data';
 import { CaseItemData } from '../common/case-item/case-item-data';
 import { CaseDetailServer } from './case-detail-server';
-import { CaseListServer } from "../case-center/case-list-server";
+import { CaseListServer } from '../case-center/case-list-server';
 
 @Component({
   templateUrl: './case-detail.component.html',

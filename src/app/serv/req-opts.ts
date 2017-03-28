@@ -3,9 +3,10 @@
  */
 export class ReqOpts {
   constructor(public url: string,
-              public data?,
-              public success?,
-              public failure?,
-              public error?) {
+              public data?: any,
+              public success?: any,
+              public failure?: any,
+              public error?: any) {
   }
+
 }
