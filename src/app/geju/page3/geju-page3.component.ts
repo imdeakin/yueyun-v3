@@ -12,6 +12,42 @@ import Swiper from 'swiper';
 })
 export class GejuPage3Component implements AfterViewInit {
   public id = 'geju-page3';
+  public describeDataList = [
+    {
+      title: '1、我的格局，不同部门联系人快速划分',
+      icons: [
+        '&#xe60e;',
+        '&#xe613;',
+        '&#xe60d;',
+        '&#xe617;',
+        '&#xe611;'
+      ],
+      content: '快速查看组织信息，申请列表，邀请成员，添加部门，各部门内成员可分组设置方便管理。'
+    },
+    {
+      title: '2、我的格局，不同部门联系人快速划分',
+      icons: [
+        '&#xe60e;',
+        '&#xe613;',
+        '&#xe60d;',
+        '&#xe617;',
+        '&#xe611;'
+      ],
+      content: '快速查看组织信息，申请列表，邀请成员，添加部门，各部门内成员可分组设置方便管理。'
+    },
+    {
+      title: '3、我的格局，不同部门联系人快速划分',
+      icons: [
+        '&#xe60e;',
+        '&#xe613;',
+        '&#xe60d;',
+        '&#xe617;',
+        '&#xe611;'
+      ],
+      content: '快速查看组织信息，申请列表，邀请成员，添加部门，各部门内成员可分组设置方便管理。'
+    }
+  ];
+  public curIndex = 0;
 
   public ngAfterViewInit(): void {
     this.initSwiper();
@@ -25,6 +61,7 @@ export class GejuPage3Component implements AfterViewInit {
   };
 
   public initSubSwiper() {
+    let $this = this;
     return new Swiper('#' + this.id + ' .sub-swiper .swiper-container', {
       prevButton: '#' + this.id + ' .sub-swiper .swiper-button-prev',
       nextButton: '#' + this.id + ' .sub-swiper .swiper-button-next',
@@ -32,7 +69,10 @@ export class GejuPage3Component implements AfterViewInit {
       spaceBetween: 20,
       autoHeight: true,
       observer: true,
-      loop: true
+      loop: true,
+      onSlideChangeStart: (swiper) => {
+        $this.curIndex = swiper.realIndex;
+      }
     });
   };
 

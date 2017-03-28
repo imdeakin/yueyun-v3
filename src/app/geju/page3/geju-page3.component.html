@@ -29,16 +29,12 @@
     </div>
     <div class="x4">
       <div class="art">
-        <div class="title">我的格局，不同部门联系人快速划分</div>
+        <div class="title">{{describeDataList[curIndex].title}}</div>
         <div class="content">
           <div class="icons">
-            <i class="icon-font">&#xe60e;</i>
-            <i class="icon-font">&#xe613;</i>
-            <i class="icon-font">&#xe60d;</i>
-            <i class="icon-font">&#xe617;</i>
-            <i class="icon-font">&#xe611;</i>
+            <i class="icon-font" *ngFor="let icon of describeDataList[curIndex].icons" [innerHtml]="icon"></i>
           </div>
-          <p>快速查看组织信息，申请列表，邀请成员，添加部门，各部门内成员可分组设置方便管理。</p>
+          <p>{{describeDataList[curIndex].content}}</p>
         </div>
       </div>
     </div>

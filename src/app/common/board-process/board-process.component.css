@@ -121,6 +121,7 @@
   -webkit-animation: slowShow 1.5s;
   -o-animation: slowShow 1.5s;
   animation: slowShow 1.5s;
+  opacity: 1;
 }
 
 #g1 {
