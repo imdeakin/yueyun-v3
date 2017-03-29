@@ -1,16 +1,26 @@
-<div class="con">
-  <div class="container">
-    <div class="wrap clearfix">
-      <div class="card-group" *ngFor="let item of data;let i = index;"
-           (mouseenter)="switchCard(i);" [class.active]="curIndex === i">
-        <i class="icon-font" [innerHtml]="item.icon"></i>
-        <div class="title">{{item.title}}</div>
+<div id="{{id}}" class="con">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" *ngFor="let cardItem of data;"
+           [style.backgroundImage]="'url(' + cardItem.img + ')'">
+        <div class="container">
+          <div class="wrap">
+            <div class="text-group" *ngFor="let item of cardItem.data;">
+              <h3>•{{item.title}}</h3>
+              <h4>{{item.content}}</h4>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="wrap">
-      <div class="text-group" *ngFor="let item of data[curIndex].data;let i = index;">
-        <h3>•{{item.title}}</h3>
-        <h4>{{item.content}}</h4>
+    <div class="swiper-pagination">
+      <div class="wrap clearfix">
+        <div class="card-group" *ngFor="let item of data;let i = index;"
+             [class.active]="curIndex === i"
+             (click)="switchCard(i)">
+          <i class="icon-font" [innerHtml]="item.icon"></i>
+          <div class="title">{{item.title}}</div>
+        </div>
       </div>
     </div>
   </div>

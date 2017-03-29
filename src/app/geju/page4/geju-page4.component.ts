@@ -1,18 +1,22 @@
 /**
  * Created by deakin on 17-2-27.
  */
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
+
+import Swiper from 'swiper';
 
 @Component({
   selector: 'geju-page4',
   templateUrl: './geju-page4.component.html',
   styleUrls: ['./geju-page4.component.css']
 })
-export class GejuPage4Component {
+export class GejuPage4Component implements AfterViewInit {
+  public id = 'geju-page4';
   public data = [
     {
       title: '名片管理',
       icon: '&#xe6b4;',
+      img: '/assets/img/geju_board_bg_04.jpg',
       data: [
         {
           title: '一看就懂，超实用客户名片管理',
@@ -27,6 +31,7 @@ export class GejuPage4Component {
     {
       title: '日程管理',
       icon: '&#xe632;',
+      img: '/assets/img/geju_board_bg_04.jpg',
       data: [
         {
           title: '日程小管家管理',
@@ -41,6 +46,7 @@ export class GejuPage4Component {
     {
       title: '公告管理',
       icon: '&#xe6a2;',
+      img: '/assets/img/geju_board_bg_04.jpg',
       data: [
         {
           title: '已读未读清晰掌握',
@@ -54,8 +60,40 @@ export class GejuPage4Component {
     }
   ];
   public curIndex = 0;
+  public swiper;
+
+  public ngAfterViewInit(): void {
+    this.initSwiper();
+  }
 
   public switchCard(index): void {
-    this.curIndex = index;
+    if (this.curIndex !== index) {
+      let i = this.getSlideToIndex(this.swiper, this.curIndex, index);
+      this.swiper.slideTo(i);
+    }
+  }
+
+  public initSwiper(): void {
+    let $this = this;
+    this.swiper = new Swiper('#' + this.id + ' .swiper-container', {
+      loop: true,
+      onSlideChangeStart: (swiper) => {
+        this.curIndex = swiper.realIndex;
+      }
+    });
+  }
+
+  /**
+   * 获取实际目标索引，保证swiper.slideTo()索引不会出错。
+   * 这可以解决 loop 模式下 swiper.slideTo() 索引错乱的Bug。
+   * @param swiper {Swiper}
+   * @param curIndex {number} 当前索引 loop模式下是swiper.realIndex的值
+   * @param toIndex {number} 目标索引
+   * @returns {number} 实际目标索引
+   */
+  public getSlideToIndex(swiper, curIndex: number, toIndex: number) {
+    let a: number = toIndex - curIndex; // 两页索引差
+    let i: number = swiper.activeIndex + a; // 实际目标索引
+    return i;
   }
 }

@@ -1,6 +1,5 @@
 .con {
-  background: url("/assets/img/geju_board_bg_04.jpg") no-repeat center;
-  padding: 100px 0;
+
 }
 
 .wrap {
@@ -49,5 +48,19 @@
   font-weight: 100;
 }
 
+.swiper-pagination {
+  width: 100%;
+  top: 100px;
+}
+
+.swiper-slide {
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 100px 0;
+}
+
+.swiper-slide .container {
+  margin-top: 166px;
+}
 
 
