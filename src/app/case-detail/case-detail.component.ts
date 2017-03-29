@@ -28,6 +28,11 @@ export class CaseDetailComponent implements OnInit {
   }
 
   public ngOnInit() {
+    window.scrollTo(0, 0);
+    this.initServer();
+  }
+
+  public initServer() {
     let $this = this;
     let id: string;
     let type: string;
