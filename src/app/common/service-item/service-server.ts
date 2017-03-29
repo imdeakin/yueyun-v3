@@ -30,7 +30,7 @@ export class ServiceServer {
       icon: '&#xe607;',
       bg: 'assets/img/service_bg_04.jpg',
       title: 'O2O移动电商',
-      describe: '利用手机、平板等无线终端进行的O2O的电子商务<br/>实现随时随地、线上下的购物与交易'
+      describe: '利用手机、平板等无线终端进行的O2O的电子商务<br/>实现随时随地、线上线下的购物与交易'
     },
     {
       icon: '&#xe642;',
