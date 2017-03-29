@@ -35,7 +35,7 @@ export class GejuPage4Component implements AfterViewInit {
     {
       title: '日程管理',
       icon: '&#xe632;',
-      img: '/assets/img/geju_board_bg_04.jpg',
+      img: '/assets/img/geju_board_bg_05.jpg',
       data: [
         {
           title: '日程小管家管理',
@@ -50,7 +50,7 @@ export class GejuPage4Component implements AfterViewInit {
     {
       title: '公告管理',
       icon: '&#xe6a2;',
-      img: '/assets/img/geju_board_bg_04.jpg',
+      img: '/assets/img/geju_board_bg_06.jpg',
       data: [
         {
           title: '已读未读清晰掌握',
