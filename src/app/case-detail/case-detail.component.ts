@@ -28,7 +28,6 @@ export class CaseDetailComponent implements OnInit {
   }
 
   public ngOnInit() {
-    window.scrollTo(0, 0);
     this.initServer();
   }
 
@@ -61,6 +60,7 @@ export class CaseDetailComponent implements OnInit {
     }).subscribe((data: ApiData) => {
       this.caseDetailServer.extactReqData(data, (list) => {
         this.caseList = list;
+        window.scrollTo(0, 0);
       });
     });
   }
