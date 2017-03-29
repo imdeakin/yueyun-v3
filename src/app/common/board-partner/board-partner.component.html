@@ -1,0 +1,8 @@
+<div id="{{id}}" class="con">
+  <board-header [color]="hColor" [title]="hTitle"></board-header>
+  <div class="list clearfix">
+    <div class="item x3 padding-small" *ngFor="let item of partnerList">
+      <partner-item [data]="item"></partner-item>
+    </div>
+  </div>
+</div>

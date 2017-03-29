@@ -2,12 +2,15 @@
   <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide" *ngFor="let cardItem of data;"
-           [style.backgroundImage]="'url(' + cardItem.img + ')'">
-        <div class="container">
-          <div class="wrap">
-            <div class="text-group" *ngFor="let item of cardItem.data;">
-              <h3>•{{item.title}}</h3>
-              <h4>{{item.content}}</h4>
+           [style.backgroundImage]="'url('+ cardItem.img +')'">
+        <img class="img-fluid" src="{{cardItem.img}}">
+        <div>
+          <div class="container">
+            <div class="wrap">
+              <div class="text-group" *ngFor="let item of cardItem.data;">
+                <h3>•{{item.title}}</h3>
+                <h4>{{item.content}}</h4>
+              </div>
             </div>
           </div>
         </div>
