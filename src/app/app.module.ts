@@ -36,6 +36,10 @@ import { SchemeItemComponent } from './common/scheme-item';
 import { BoardAboutComponent } from './common/board-About';
 import { AboutItemComponent } from './common/about-item';
 
+// 合作伙伴
+import { BoardPartnerComponent } from './common/board-partner';
+import { PartnerItemComponent } from './common/partner-item';
+
 // 联系我们
 import { BoardContactComponent } from './common/board-contact';
 
@@ -121,6 +125,9 @@ import { CaseRoutingModule } from './case-center/case-routing.module';
 
     BoardAboutComponent,
     AboutItemComponent,
+
+    BoardPartnerComponent,
+    PartnerItemComponent,
 
     BoardContactComponent,
 

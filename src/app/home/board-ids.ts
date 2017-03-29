@@ -8,5 +8,6 @@ export let boardIds = {
   scheme: 'scheme-page',
   process: 'process-page',
   about: 'about-page',
-  contact: 'contact-page'
+  contact: 'contact-page',
+  partner: 'partner-page'
 };

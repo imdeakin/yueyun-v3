@@ -6,6 +6,10 @@
   background: url("/assets/img/board_bg_02.jpg") no-repeat center/cover;
 }
 
+.partner-board {
+  background: url("/assets/img/board_bg_06.jpg") no-repeat center/cover;
+}
+
 .scheme-board {
   background: url("/assets/img/board_bg_01.jpg") no-repeat center/cover;
 }
