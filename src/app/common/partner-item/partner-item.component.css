@@ -1,0 +1,22 @@
+.con {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.con > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  /*transition: top 1s;*/
+}
+
+.con:hover > img {
+  /*top: -100%;*/
+  /*transition: top 1s;*/
+}
+
+

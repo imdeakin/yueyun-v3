@@ -5,18 +5,16 @@
     </div>
     <div class="float-right">
       <ul class="nav nav-inline" *ngIf="!type">
-        <li *ngFor="let item of items; let i = index"
-            [class.active]="activeIndex === i">
-          <template [ngIf]="item.link">
-            <div class="text-big"
+        <li *ngFor="let item of items; let i = index">
+          <div class="text-big"
                routerLink="{{item.link}}"
-               [ngClass]="getItemStyle(i)">{{item.title}}</div>
-          </template>
-          <template [ngIf]="!item.link">
-            <a href="{{item.url}}"
-               class="text-big"
-               [ngClass]="getItemStyle(i)">{{item.title}}</a>
-          </template>
+               [ngClass]="getItemStyle(i)"
+               *ngIf="item.link">{{item.title}}
+          </div>
+          <a href="{{item.url}}"
+             class="text-big"
+             [ngClass]="getItemStyle(i)"
+             *ngIf="!item.link">{{item.title}}</a>
         </li>
       </ul>
       <ul class="nav nav-inline" *ngIf="type == 1">

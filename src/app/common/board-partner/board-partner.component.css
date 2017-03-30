@@ -1,4 +1,28 @@
-.list {
-  margin-top: 85px;
-  margin-bottom: 85px;
+.con {
+  position: relative;
 }
+
+.list {
+  width: 1190px;
+  margin: 85px -5px;
+}
+
+.list .item {
+  position: relative;
+  float: left;
+  width: 238px;
+  height: 151px;
+  border: 1px solid #ccc;
+  z-index: 9;
+}
+
+.boxBor {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 4;
+  background: #ccc;
+}
+
+
