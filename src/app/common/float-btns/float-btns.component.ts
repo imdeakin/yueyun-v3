@@ -5,8 +5,6 @@ import { Component, AfterViewInit } from '@angular/core';
 
 import { ScrollToTop } from '../../plugins/scroll-to-top';
 
-declare let $: any;
-
 @Component({
   selector: 'float-btns',
   templateUrl: 'float-btns.component.html',
