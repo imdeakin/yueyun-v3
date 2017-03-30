@@ -19,20 +19,20 @@ export class BoardPartnerComponent implements AfterViewInit {
   public hTitle = '合作伙伴';
   public partnerList: PartnerItemData[] = [
     {img: 'assets/img/partner_01.png'},
-    {img: 'assets/img/partner_01.png'},
-    {img: 'assets/img/partner_01.png'},
-    {img: 'assets/img/partner_01.png'},
-    {img: 'assets/img/partner_01.png'},
-    {img: 'assets/img/partner_01.png'},
-    {img: 'assets/img/partner_01.png'},
-    {img: 'assets/img/partner_01.png'},
-    {img: 'assets/img/partner_01.png'},
-    {img: 'assets/img/partner_01.png'},
-    {img: 'assets/img/partner_01.png'},
-    {img: 'assets/img/partner_01.png'},
-    {img: 'assets/img/partner_01.png'},
-    {img: 'assets/img/partner_01.png'},
-    {img: 'assets/img/partner_01.png'}
+    {img: 'assets/img/partner_02.png'},
+    {img: 'assets/img/partner_03.png'},
+    {img: 'assets/img/partner_04.png'},
+    {img: 'assets/img/partner_05.png'},
+    {img: 'assets/img/partner_06.png'},
+    {img: 'assets/img/partner_07.png'},
+    {img: 'assets/img/partner_08.png'},
+    {img: 'assets/img/partner_09.png'},
+    {img: 'assets/img/partner_10.png'},
+    {img: 'assets/img/partner_11.png'},
+    {img: 'assets/img/partner_12.png'},
+    {img: 'assets/img/partner_13.png'},
+    {img: 'assets/img/partner_14.png'},
+    {img: 'assets/img/partner_15.png'}
   ];
 
   public ngAfterViewInit(): void {
