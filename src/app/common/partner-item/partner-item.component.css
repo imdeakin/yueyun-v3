@@ -11,12 +11,6 @@
   left: 0;
   width: 100%;
   height: auto;
-  /*transition: top 1s;*/
-}
-
-.con:hover > img {
-  /*top: -100%;*/
-  /*transition: top 1s;*/
 }
 
 

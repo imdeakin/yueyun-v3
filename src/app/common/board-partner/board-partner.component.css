@@ -13,13 +13,17 @@
   width: 238px;
   height: 151px;
   border: 1px solid #ccc;
-  background: white;
-  opacity: 0.6;
   z-index: 9;
 }
 
-.list .item:hover {
-  background: transparent;
+.list .item .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 0.6;
 }
 
 .boxBor {
@@ -27,8 +31,8 @@
   left: 0;
   top: 0;
   display: none;
-  z-index: 4;
-  background: #ccc;
+  z-index: 7;
+  background: #999;
 }
 
 

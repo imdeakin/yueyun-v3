@@ -2,6 +2,7 @@
   <board-header [color]="hColor" [title]="hTitle"></board-header>
   <div class="list clearfix">
     <div class="item" *ngFor="let item of partnerList">
+      <div class="bg"></div>
       <partner-item [data]="item"></partner-item>
     </div>
   </div>
