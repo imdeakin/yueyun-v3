@@ -72,7 +72,7 @@ export class BoardPartnerComponent implements AfterViewInit {
         top: oPosition.top,
         width: oThis.width(),
         height: oThis.height()
-      }, 200)
+      }, 200);
     });
   }
 }
