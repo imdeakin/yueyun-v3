@@ -266,7 +266,6 @@ module.exports = function (options) {
        */
       new CopyWebpackPlugin([
         { from: 'src/assets', to: 'assets' },
-        { from: 'src/dowload.html'},
         { from: 'src/meta'}
       ]),
 
