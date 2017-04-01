@@ -25,10 +25,6 @@ export class GejuPage4Component implements AfterViewInit {
         {
           title: '您的电子名片夹',
           content: '随时随地云端保存，永久保留方便查阅'
-        },
-        {
-          title: '您的电子名片夹',
-          content: '随时随地云端保存，永久保留方便查阅'
         }
       ]
     },
